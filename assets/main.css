@@ -25,6 +25,7 @@ h1 {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
+  margin: 0 5px;
 }
 
 .square {
@@ -32,14 +33,12 @@ h1 {
   background-color: #eee;
   display: inline-block;
   padding: 40px;
-  font-size: 60px;
   margin: 5px;
   cursor: pointer;
   color: #eee;
   user-select: none;
   border-radius: 4px;
   flex: 1;
-  /* transition: all 0.2s ease; */
 }
 
 .player,

@@ -158,9 +158,11 @@ function fnReset() {
     fnSetWinner(null);
     fnSetInnerHTML(selectedWinner, '');
 
-    squaresNotWinner.forEach(function (square) {
-        fnRemoveClass(square, 'isBlurred');
-    });
+    if (squaresNotWinner != null) {
+        squaresNotWinner.forEach(function (square) {
+            fnRemoveClass(square, 'isBlurred');
+        });
+    }
     fnRemoveClass(fnGetElemById('controls'), 'isNotPlaying');
 
     for (let i = 1; i <= 9; i++) {
