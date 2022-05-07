@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Tic-tac-toe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+
+  <body>
+    <h1>Tic-tac-toe</h1>
+
+    <div class="container">
+      <div class="line">
+        <div id="1" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="2" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="3" class="square" onclick="fnChooseSquare(this.id)">-</div>
+      </div>
+
+      <div class="line">
+        <div id="4" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="5" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="6" class="square" onclick="fnChooseSquare(this.id)">-</div>
+      </div>
+
+      <div class="line">
+        <div id="7" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="8" class="square" onclick="fnChooseSquare(this.id)">-</div>
+        <div id="9" class="square" onclick="fnChooseSquare(this.id)">-</div>
+      </div>
+
+      <div id="controls" class="isPlaying">
+        <div class="player">
+          <label> Player: </label>
+          <label id="selected-player"> </label>
+        </div>
+
+        <div class="winner">
+          <label>Winner: </label>
+          <label id="selected-winner"> </label>
+        </div>
+      </div>
+
+      <div class="button">
+        <button onclick="fnReset()">Restart game</button>
+      </div>
+    </div>
+  </body>
+  <script src="assets/main.js"></script>
+</html>
